@@ -323,6 +323,11 @@
 .btn-custom-typo.font-555555 { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !important; }
 
 /*----------------------------------------------------------
+#Font-size: 10px
+----------------------------------------------------------*/
+.fontsize-279246 { font-size: 10px; }
+
+/*----------------------------------------------------------
 #Standard font size
 ----------------------------------------------------------*/
 body,p,li,dt,dd,dl,address,label,small,pre,code { font-size: 15px; }

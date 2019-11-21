@@ -155,3 +155,19 @@ require_once get_template_directory() . '/core/inc/related-posts.php';
  * Deprecated functions.
  */
 require_once get_template_directory() . '/core/inc/deprecated-functions.php';
+
+add_shortcode('copyright-year', function($atts, $content)
+{
+    extract(shortcode_atts(array(
+        'sign' => 'true',
+        'start' => '',
+    ), $atts));
+ 
+    $current_year = date('Y');
+    $print_sign = ($sign === 'true') ? '&copy;' : '';
+ 
+    if($start === $current_year || $start === '')
+        return "{$print_sign} {$current_year}";
+    else
+        return "{$print_sign} {$start} - {$current_year}";
+});

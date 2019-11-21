@@ -146,7 +146,7 @@ if ( ! function_exists( 'uncode_get_current_post_type' ) || uncode_get_current_p
 	}
 
 	if ($footer_icons !== '') {
-		$footer_icons = '<div class="uncell col-lg-6 pos-middle text-'.($footer_position === 'center' ? $footer_position : $alignArray[!array_search($footer_position, $alignArray)]).'">' . $footer_icons . '</div>';
+		$footer_icons = '<div class="uncell col-lg-2 pos-middle text-'.($footer_position === 'center' ? $footer_position : $alignArray[!array_search($footer_position, $alignArray)]).'">' . $footer_icons . '</div>';
 	}
 
 	$class_footer = 'site-footer';

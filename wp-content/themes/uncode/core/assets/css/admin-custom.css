@@ -317,12 +317,66 @@
 */
 
 /*----------------------------------------------------------
-#-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+#"Proxima Nova Alt Regular"
 ----------------------------------------------------------*/
-.font-555555 { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !important; }
-.btn-custom-typo.font-555555 { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !important; }
+.font-555555 { font-family: "Proxima Nova Alt Regular" !important; }
+.btn-custom-typo.font-555555 { font-family: "Proxima Nova Alt Regular" !important; }
 
 /*----------------------------------------------------------
-#Font-size: 10px
+#"Proxima Nova Alt Bold"
 ----------------------------------------------------------*/
-.fontsize-279246 { font-size: 10px; }
+.font-207643 { font-family: "Proxima Nova Alt Bold" !important; }
+.btn-custom-typo.font-207643 { font-family: "Proxima Nova Alt Bold" !important; }
+
+/*----------------------------------------------------------
+#"Proxima Nova Alt Black"
+----------------------------------------------------------*/
+.font-146551 { font-family: "Proxima Nova Alt Black" !important; }
+.btn-custom-typo.font-146551 { font-family: "Proxima Nova Alt Black" !important; }
+
+/*----------------------------------------------------------
+#"Proxima Nova Alt Condensed Semibold"
+----------------------------------------------------------*/
+.font-143994 { font-family: "Proxima Nova Alt Condensed Semibold" !important; }
+.btn-custom-typo.font-143994 { font-family: "Proxima Nova Alt Condensed Semibold" !important; }
+
+/*----------------------------------------------------------
+#"Proxima Nova ScOsf Thin"
+----------------------------------------------------------*/
+.font-174611 { font-family: "Proxima Nova ScOsf Thin" !important; }
+.btn-custom-typo.font-174611 { font-family: "Proxima Nova ScOsf Thin" !important; }
+
+/*----------------------------------------------------------
+#"Proxima Nova Thin"
+----------------------------------------------------------*/
+.font-141160 { font-family: "Proxima Nova Thin" !important; }
+.btn-custom-typo.font-141160 { font-family: "Proxima Nova Thin" !important; }
+
+/*----------------------------------------------------------
+#"Proxima Nova Semibold"
+----------------------------------------------------------*/
+.font-181300 { font-family: "Proxima Nova Semibold" !important; }
+.btn-custom-typo.font-181300 { font-family: "Proxima Nova Semibold" !important; }
+
+/*----------------------------------------------------------
+#Font-size: 60px
+----------------------------------------------------------*/
+.fontsize-279246 { font-size: 60px; }
+@media (max-width: 959px) { .fontsize-279246 { font-size: 40px; }}
+@media (max-width: 569px) { .fontsize-279246 { font-size: 35px; }}
+@media (max-width: 320px) { .fontsize-279246 { font-size: 28px; }}
+
+/*----------------------------------------------------------
+#Font-size: px
+----------------------------------------------------------*/
+.fontsize-178808 { font-size: px; }
+
+/*----------------------------------------------------------
+#Line-height: 65px
+----------------------------------------------------------*/
+.fontheight-207107 { line-height: 65px; }
+
+/*----------------------------------------------------------
+#Line-height: 60
+----------------------------------------------------------*/
+.fontheight-191152 { line-height: 60; }

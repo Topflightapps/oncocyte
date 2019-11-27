@@ -6207,7 +6207,7 @@ ul.menu-smart {
 }
 @media (min-width: 960px) {
   .menu-smart > li > a {
-    padding: 0px 14px 0px 14px;
+    padding: 0px 24px 0px 24px;
   }
   .menu-primary .menu-icons.menu-smart > li > a {
     padding: 0px 9px 0px 9px;

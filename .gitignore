@@ -1,1 +1,6 @@
 wp-config.php
+
+.sass-cache
+
+wp-content/themes/uncode-child/style.css
+wp-content/themes/uncode-child/style.css.map

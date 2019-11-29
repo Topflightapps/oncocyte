@@ -1,0 +1,33 @@
+/*
+Theme Name: Uncode Child
+Description: Child theme for Uncode theme
+Author: Undsgn™
+Author URI: http://www.undsgn.com
+Template: uncode
+Version: 1.0.0
+Text Domain: uncode
+*/
+
+// Fonts
+@import 'fonts';
+
+// Variables
+@import 'variables';
+
+// Components
+@import 'components/main';
+@import 'components/header';
+@import 'components/footer';
+
+//Pages
+@import 'pages/about_us';
+
+/*
+ // cd to document root
+ // Watch - use this while you are developing 
+ $ sass --watch wp-content/themes/uncode-child/sass/oncocyte.scss:wp-content/themes/uncode-child/style.css
+ // For localhost
+ $ sass wp-content/themes/uncode-child/sass/oncocyte.scss:wp-content/themes/uncode-child/style.css
+ // Use this on production or on staging (to minify css file)
+ $ sass wp-content/themes/uncode-child/sass/oncocyte.scss:wp-content/themes/uncode-child/style.css --style compressed
+*/

@@ -1,9 +1,27 @@
-.about-us-first-section {
+.about-us-first-section.row-container .row-parent .single-internal-gutter .uncont > * {
+	margin-top: inherit;
+}
+.about-us-second-section.row-container .row-parent .single-internal-gutter .uncont > * {
+	margin-top: inherit;
+}
+.about-us-leadership.row-container .row-parent .single-internal-gutter .uncont > * {
+	margin-top: inherit;
+}
+
+.about-us-first-section, .about-us-second-section, .about-us-leadership {
 	position: relative;
 	max-width: 1200px;
 	width: 96%;
 	margin-left: auto;
 	margin-right: auto;
+
+	&.row-container .row-parent {
+		padding: 0;
+	}
+}
+
+.about-us-first-section {
+	margin-bottom: 30px;
 
 	&.row-container .row-parent {
 		padding: 0;
@@ -28,6 +46,7 @@
 
 	.about-us-first-section--paragraph {
 		color: rgba(255,255,255,0.8);
+		font-family: 'Proxima Nova Alt';
 		font-size: 17px;
 		line-height: 27px;
 		font-weight: 500;
@@ -50,6 +69,7 @@
 		overflow: hidden;
 
 		img {
+			object-fit: cover;
 		}
 	}
 
@@ -57,7 +77,6 @@
 		background-color: #F7F8FA;
 		border-radius: 90px 0 0 90px;
 		position: absolute;
-		bottom: 0;
 		width: 66.66%;
 		left: 50%;
 		transform: translateX(-50%);
@@ -66,7 +85,7 @@
 
 	.about-us-first-section--blue-bg {
 		background-color: #012169;
-		border-radius: 0 0 0 100px;
+		border-radius: 0 0 100px 100px;
 		position: absolute;
 		width: 100%;
 		z-index: 1;
@@ -81,7 +100,7 @@
 		left: -20px;
 		z-index: 5;
 
-		.about-us-first-section--rounded-icon-1-3 {
+		.about-us-first-section--rounded-icon {
 			border-radius: 15px 0 15px 0;
 			width: 40px;
 			height: 40px;
@@ -94,5 +113,266 @@
 				background-color: white;
 			}
 		}
+	}
+}
+
+.about-us-second-section {
+
+	&.row-container .row-parent {
+		padding: 0;
+	}
+
+	.about-us-second-section--grey-bg {
+		background-color: #F7F8FA;
+		border-radius: 0 130px 0 130px;
+		position: absolute;
+		width: 66.66%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 0;
+	}
+
+	.about-us-second-section--blue-bg {
+		background-color: #012169;
+		border-radius: 0 100px 0 100px;
+		position: absolute;
+		right: 0;
+		width: 66.66%;
+		z-index: 1;
+	}
+
+	.about-us-second-section--image {
+		width: 43%;
+		height: auto;
+		top: 0;
+		left: 0;
+		position: absolute;
+		z-index: 3;
+		margin-top: 0!important;
+		border-radius: 90px 0!important;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+		}
+	}
+
+	.about-us-second-section--heading {
+		width: 58.33%;
+		position: absolute;
+		z-index: 4;
+		left: 30%;
+		margin-top: 0;
+
+		h2 {
+			color: #fff;
+			font-family: 'Proxima Nova Alt';
+			font-size: 60px!important;
+			font-weight: bold;
+			line-height: 60px;
+			text-shadow: 0px 0px 10px #333;
+		}
+	}
+
+	.about-us-second-section--content {
+		color: rgba(255,255,255,0.8);
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 400;
+		font-family: 'Proxima Nova Alt';
+		width: 41.67%;
+		right: 8.33%;
+		position: absolute;
+		margin-top: 0!important;
+		z-index: 4;
+
+		h1, h2, h3, h4, h5, h6, strong {
+			color: #fff;
+		}
+	}
+
+	.about-us-second-section--rounded-icons {
+		width: 100px;
+		height: 123px;
+		position: absolute;
+		z-index: 5;
+
+		&.first {
+			left: 33.33%;
+			bottom: 60px;
+		}
+
+		&.second {
+			right: 20px;
+		}
+
+		.about-us-second-section--rounded-icon-1, .about-us-second-section--rounded-icon-2, .about-us-second-section--rounded-icon-3 {
+
+			&.white {
+				background-color: white;
+			}
+		}
+		.about-us-second-section--rounded-icon-1 {
+			border-radius: 15px 0 15px 0;
+			height: 40px;
+			margin-left: 40px;
+			width: 40px;
+		}
+		.about-us-second-section--rounded-icon-2 {
+			border-radius: 20px 0 20px 0;
+			height: 60px;
+			margin-left: -20px;
+			width: 60px;
+		}
+		.about-us-second-section--rounded-icon-3 {
+			border-radius: 10px 0 10px 0;
+			height: 30px;
+			margin-left: 40px;
+			margin-top: -7px;
+			width: 30px;
+		}
+	}
+}
+
+.about-us-leadership {
+    margin-top: 80px;
+	padding-top: 60px;
+	padding-bottom: 50px;
+
+	.leadership-member.row-container .column_child.single-internal-gutter .uncont > :not(:first-child){
+		margin-top: inherit;
+	}
+	.leadership-member.row-container > .row-parent .row-child > .row-inner > div {
+		padding-left: 0;
+	}
+
+	.leadership--title-small {
+		position: absolute;
+		top: -20px;
+		text-align: center;
+		width: 50%;
+
+		h2 {
+			color: #999;
+			font-family: 'Proxima Nova Alt';
+			font-size: 28px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+
+	.leadership--title {
+		position: absolute;
+		top: 10px;
+		text-align: center;
+		width: 50%;
+
+		h2 {
+			font-family: 'Proxima Nova Alt';
+			font-size: 66px;
+			line-height: 81px;
+			font-weight: bold;
+		}
+	}
+
+	.leadership-member {
+		width: 33.33%;
+		position: relative;
+		margin-bottom: 60px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		&.leadership-member-1 {
+			margin-left: 50%;
+			transform: translateX(20px);
+		}
+
+		&.leadership-member-2 {
+			margin-left: 33.33%;
+			transform: translateX(20px);
+		}
+
+		&.leadership-member-3 {
+			margin-left: 16.66%;
+			transform: translateX(20px);
+		}
+
+		&.leadership-member-4 {
+			position: absolute;
+			left: 50%;
+			transform: translateX(20px);
+		}
+
+		&.leadership-member-5 {
+			margin-left: 33.33%;
+			transform: translateX(20px);
+		}
+
+		&.leadership-member-6 {
+			position: absolute;
+			left: 66.66%;
+			transform: translateX(20px);
+		}
+
+		.leadership-member--image {
+			width: 50%;
+		}
+		.leadership-member--name {
+			font-family: 'Proxima Nova Alt';
+			font-weight: bold;
+			padding-left: 20px;
+			position: absolute;
+			left: 50%;
+			text-transform: uppercase;
+			top: 0;
+			width: 50%;
+
+			p {
+			    font-size: 24px;
+    			line-height: 1.2;
+			}
+		}
+
+		.leadership-member--title {
+			font-family: 'Proxima Nova Alt';
+			left: 50%;
+			padding-left: 20px;
+			position: absolute;
+			width: 50%;
+
+			p {
+				font-size: 14px;
+			}
+		}
+
+		.view-button {
+			background-color: #012169;
+			border-radius: 8px 0 8px 0;
+    		bottom: 0;
+			color: #fff;
+			display: block;
+			font-family: 'Proxima Nova Alt';
+			font-size: 14px;
+			font-weight: bold;
+			height: 38px;
+			left: 50%;
+			line-height: 38px;
+    		position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+    		transform: translateX(20px);
+			width: 76px;
+		}
+	}
+
+	.leadership--grey-bg-large {
+		background-color: #F7F8FA;
+		border-radius: 0 70px 0 60px;
+		position: absolute;
+		right: 8.33%;
+		top: 0;
+		transform: translateX(-20px);
+		width: 33.33%;
+		z-index: -1;
 	}
 }

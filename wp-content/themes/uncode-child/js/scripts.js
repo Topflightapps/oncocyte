@@ -86,9 +86,6 @@
 			var count = 1;
 			$('.about-us-science-members .science-member').each(function(index, element) {
 				$(this).addClass(`science-member-${count}`).append(`<span class="view-button">View</span>`)
-				if (count === 4) {
-					$(this).css('top', `${(($(this).outerHeight() + 60) * 2)}px`)
-				}
 				count++;
 			})
 			$('.about-us-science-members').append(`<div class="science--grey-bg-large"></div><div class="science--grey-bg-small"></div>`);

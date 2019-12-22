@@ -1,0 +1,339 @@
+.leadership--section-1.row-container .row-parent .single-internal-gutter .uncont > * {
+	margin-top: inherit;
+}
+.leadership-page--member.row-container .row-parent .single-internal-gutter .uncont > * {
+	margin-top: inherit;
+}
+.leadership-page--member.row-container .row-parent .single-internal-gutter .uncont > .leader--name {
+	@media (min-width: 768px) {
+		margin-top: 60px;
+	}
+}
+
+.main-container .leadership--section-1.row-container .row-parent .uncont > :first-child {
+	margin-top: 20px!important;
+}
+.main-container .leadership-page--member.row-container .row-parent .uncont > :first-child {
+}
+
+.leadership-page--member.row-container .row-parent .single-internal-gutter .uncont .leader--bio {
+	margin-top: 220px;
+
+	@media (min-width: 768px) {
+		margin-top: inherit;
+	}
+}
+
+.leadership--section-1, .leadership-page--member {
+	position: relative;
+	max-width: 1200px;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+
+	&.row-container .row-parent {
+		padding: 0;
+	}
+}
+
+
+.leadership--section-1 {
+	position: relative;
+	margin-bottom: 50px;
+
+	div.heading-first {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			margin-left: 8.33%;
+			margin-top: 20px!important;
+			margin-bottom: 50px;
+			transform: translateX(30px);
+		}
+
+		* {
+			color: #2C2C2C;
+			font-family: 'Proxima Nova Alt';
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 44px;
+		}
+
+	}
+	div.heading-second {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			margin-left: 20%;
+		}
+
+		* {
+			color: #fff;
+			font-family: 'Proxima Nova Alt';
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 18px;
+			text-transform: uppercase;
+		}
+
+	}
+	div.heading-third {
+		//display: none;
+		padding-top: 30px;
+
+		@media (min-width: 768px) {
+			display: block;
+			margin-left: 20%;
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		* {
+			color: #303113;
+			font-family: 'Proxima Nova Alt';
+			font-weight: bold;
+			font-size: 54px;
+			line-height: 68px;
+			text-align: center;
+
+			@media (min-width: 768px) {
+				color: #fff;
+				text-align: left;
+				text-shadow: 0px 0px 10px #333;
+				text-transform: uppercase;
+			}
+		}
+		
+	}
+	.section-1-image {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			position: absolute;
+			top: 20px;
+			right: 0px;
+			width: 45%;
+			z-index: -1;
+		}
+
+		img {
+			object-fit: cover;
+		}
+	}
+
+	.grey-bg {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			background-color: $container_background_grey;
+			border-radius: 0 130px 0 130px;
+			width: 66.66%;
+			position: absolute;
+			top: 0;
+			left: 16.66%;
+			transform: translateX(30px);
+			z-index: -3;
+		}
+	}
+
+	.blue-bg {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			background-color: $leadership_blue;
+			border-radius: 0 100px 0 100px;
+			width: 66.66%;
+			position: absolute;
+			left: 5%;
+			z-index: -2;
+		}
+	}
+
+	.rounded-icons {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			position: absolute;
+			left: 5%;
+		}
+	}
+}
+
+.leadership-page--member {
+	position: relative;
+	margin-bottom: 50px;
+
+	&.image-right {
+
+		@media (min-width: 768px) {
+			div.leader--name, div.leader--title, div.leader--bio {
+				margin-left: 8.33%;
+			}
+			.leader--image {
+				left: auto;
+				right: 0;
+			}
+
+			.grey-bg {
+				right: auto;
+				left: 0;
+			}
+
+			.rounded-icons-type-2 {
+				left: auto;
+				right: 33.33%;
+				transform: translateX(40px);
+			}
+			.row-inner > div {
+				padding-left: 0;
+			}
+		}
+	}
+
+	.leader--image {
+		position: absolute;
+		top: 0;
+		left: 10px;
+		width: 41.33%;
+		max-width: 200px;
+		height: 200px;
+
+		@media (min-width: 768px) {
+			left: 0;
+			top: 60px;
+			height: auto;
+			max-width: none;
+		}
+
+		img {
+			object-fit: cover;
+			object-position: top;
+			height: 200px;
+			border-radius: 0 50px;
+
+			@media (min-width: 768px) {
+				border-radius: 0;
+				object-fit: contain;
+				object-position: center;
+				height: auto;
+			}
+		}
+	}
+
+	div.leader--name {
+		transform: translateX(30px);
+		width: 41.66%;
+		position: absolute;
+
+		@media (min-width: 768px) {
+			margin-left: 50%;
+			position: initial;
+			margin-top: 60px;
+			margin-bottom: 10px;
+		}
+
+		* {
+			color: #2C2C2C;
+			font-family: 'Proxima Nova Alt';
+			font-size: 32px;
+			font-weight: bold;
+			line-height: 34px;
+			text-transform: uppercase;
+		}
+	}
+
+	div.leader--title {
+		width: 41.66%;
+		position: absolute;
+		transform: translateX(30px);
+
+		@media (min-width: 768px) {
+			position: initial;
+			margin-left: 50%;
+			margin-bottom: 10px;
+		}
+
+		* {
+			color: #747474;
+			font-family: 'Proxima Nova Alt';
+			font-size: 20px;
+			font-weight: normal;
+			line-height: 24px;
+		}
+	}
+
+	div.leader--bio {
+		padding-left: 10px;
+		padding-right: 10px;
+
+		@media (min-width: 768px) {
+			margin-left: 50%;
+			margin-top: 0;
+			transform: translateX(30px);
+			width: 41.66%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		* {
+			color: #999999;
+			font-family: 'Proxima Nova Alt';
+			font-size: 14px;
+			font-weight: normal;
+			line-height: 22px;
+		}
+	}
+
+	.grey-bg {
+		background-color: $container_background_grey;
+		border-radius: 50px 0 50px 0;
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		right: 0;
+		z-index: -1;
+
+		@media (min-width: 768px) {
+			border-radius: 130px 0 130px 0;
+			width: 66.66%;
+			top: 0;
+		}
+	}
+
+	.rounded-icons-type-2 {
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+
+		@media (min-width: 768px) {
+			bottom: 60px;
+			left: 33.33%;
+			right: auto;
+			transform: translateX(-20px);
+		}
+	}
+
+	&.orange-icon .rounded-icons-type-2 {
+		.rounded-icon-1, .rounded-icon-2, .rounded-icon-3 {
+			background-color: $event_orange;
+		}
+	}
+
+	&.green-icon .rounded-icons-type-2 {
+		.rounded-icon-1, .rounded-icon-2, .rounded-icon-3 {
+			background-color: $event_green;
+		}
+	}
+}
+
+.leadership--contact-form {
+	.contact-form--color-bg {
+		background-color: $leadership_blue;
+	}
+}

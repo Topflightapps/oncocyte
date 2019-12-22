@@ -8,6 +8,8 @@ Version: 1.0.0
 Text Domain: uncode
 */
 
+@import 'pages/rest_of_the_pages_stylesheet';
+
 // Fonts
 @import 'fonts';
 
@@ -20,7 +22,9 @@ Text Domain: uncode
 @import 'components/footer';
 
 //Pages
+@import 'pages/general';
 @import 'pages/about_us';
+@import 'pages/leadership';
 
 /*
  // cd to document root

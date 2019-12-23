@@ -335,12 +335,36 @@
 				margin-left: 40px;
 			}
 		}
+		&.mirrored {
+			border-radius: 0 12px;
+
+			@media (min-width: 768px) {
+				border-radius: 0 15px;
+			}
+
+
+			&:nth-of-type(odd) {
+				margin-left: 0;
+
+			}
+
+			&:nth-of-type(even) {
+				margin-left: 32px;
+
+				@media (min-width: 768px) {
+					margin-left: 40px;
+				}
+			}
+		}
 
 		&.white {
 			background-color: white;
 		}
 		&.blue {
 			background-color: $dark_blue;
+		}
+		&.purple {
+			background-color: $event_purple;
 		}
 	}
 
@@ -352,6 +376,9 @@
 			}
 			&.blue {
 				background-color: $dark_blue;
+			}
+			&.purple {
+				background-color: $event_purple;
 			}
 		}
 		.rounded-icon-1 {
@@ -406,6 +433,9 @@
 			&.blue {
 				background-color: $dark_blue;
 			}
+			&.purple {
+				background-color: $event_purple;
+			}
 		}
 		.rounded-icon-1 {
 			border-radius: 8px 0 8px 0;
@@ -445,5 +475,75 @@
 				width: 40px;
 			}
 		}
+	}
+
+	&.rounded-icons-type-4 {
+		.rounded-icon-1, .rounded-icon-2, .rounded-icon-3 {
+
+			&.white {
+				background-color: white;
+			}
+			&.blue {
+				background-color: $dark_blue;
+			}
+			&.purple {
+				background-color: $event_purple;
+			}
+		}
+		.rounded-icon-1 {
+			border-radius: 0 12px 0 12px;
+			height: 32px;
+			width: 32px;
+		}
+		.rounded-icon-2 {
+			border-radius: 0 16px 0 16px;
+			height: 48px;
+			margin-left: 32px;
+			width: 48px;
+		}
+		.rounded-icon-3 {
+			border-radius: 0 8px 0 8px;
+			height: 24px;
+			width: 24px;
+		    margin-left: 8px;
+		    margin-bottom: -4px;
+		}
+		@media (min-width: 768px) {
+			.rounded-icon-1 {
+				border-radius: 0 15px 0 15px;
+				height: 40px;
+				width: 40px;
+			}
+			.rounded-icon-2 {
+				border-radius: 0 20px 0 20px;
+				height: 60px;
+				margin-left: 40px;
+				width: 60px;
+			}
+			.rounded-icon-3 {
+				border-radius: 0 10px 0 10px;
+				height: 30px;
+				width: 30px;
+			    margin-left: 10px;
+			    margin-bottom: -5px;
+			}
+		}
+	}
+}
+.section-references {
+	* {
+		color: #999999;
+		font-family: 'Proxima Nova Alt';
+		font-size: 10px;
+		line-height: 18px;
+	}
+	p strong {
+		color: #999999;
+		font-family: 'Proxima Nova Alt';
+		font-size: 12px;
+		font-weight: bold;
+	}
+	ol, ul {
+		margin-top: 0;
 	}
 }

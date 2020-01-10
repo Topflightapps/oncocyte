@@ -204,6 +204,7 @@
 		width: 41.33%;
 		max-width: 200px;
 		height: 200px;
+		overflow: hidden;
 
 		@media (min-width: 768px) {
 			left: 0;
@@ -219,10 +220,12 @@
 			border-radius: 0 50px;
 
 			@media (min-width: 768px) {
-				border-radius: 0;
-				object-fit: contain;
+				border-radius: 60px 0;
+				object-fit: cover;
 				object-position: center;
-				height: auto;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}

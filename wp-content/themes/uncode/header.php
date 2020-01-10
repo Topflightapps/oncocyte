@@ -39,6 +39,7 @@ if (is_admin_bar_showing()) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php endif; ?>
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
 </head>

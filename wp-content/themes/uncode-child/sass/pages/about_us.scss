@@ -242,7 +242,7 @@
 		border-radius: 40px 0!important;
 		overflow: hidden;
 		right: 0;
-		width: 33.33%;
+		width: 160px;
 
 		@media (min-width: 768px) {
 			border-radius: 90px 0!important;
@@ -269,13 +269,15 @@
 		position: absolute;
 		z-index: 4;
 		margin-top: 0;
-		width: 50%;
+		width: 100%;
+		max-width: 350px;
 		left: 0;
 		padding: 0 30px;
 
 		@media (min-width: 768px) {
 			padding: initial;
 			width: 58.33%;
+			max-width: none;
 			left: 30%;
 		}
 
@@ -411,12 +413,14 @@
 	.leadership--title {
 		text-align: center;
 		margin-bottom: 50px;
+		padding-bottom: 30px;
 
 		@media (min-width: 768px) {
 			position: absolute;
 			top: 10px;
 			width: 50%;
 			margin-bottom: 0;
+			padding-bottom: 0;
 		}
 
 		* {
@@ -788,11 +792,12 @@
 }
 
 .about-us-science-members {
-    margin-top: 80px;
+    margin-top: 50px;
 
 	@media (min-width: 768px) {
 		padding-top: 60px;
 		padding-bottom: 50px;
+    	margin-top: 80px;
 	}
 
 	.science-member.row-container .column_child.single-internal-gutter .uncont > :not(:first-child){
@@ -827,12 +832,14 @@
 	.science--title {
 		text-align: center;
 		margin-bottom: 50px;
+		padding-bottom: 40px;
 
 		@media (min-width: 768px) {
 			position: absolute;
 			top: 10px;
 			width: 50%;
 			margin-bottom: 0;
+			padding-bottom: 0;
 		}
 
 		* {
@@ -1044,18 +1051,26 @@
 
 	.about-us-section-6-heading {
 		font-family: 'Proxima Nova Alt';
-		font-size: 36px;
 		font-weight: bold;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 2;
 
 		@media (min-width: 768px) {
-			width: 50%
+			width: 50%;
+			margin-bottom: 40px;
 		}
 
 		* {
 			font-family: 'Proxima Nova Alt';
-			font-size: 36px;
+			font-size: 32px;
+			line-height: 40px;
 			font-weight: bold;
+
+			@media (min-width: 768px) {
+				font-size: 60px;
+				line-height: 60px;
+			}
 		}
 	}
 
@@ -1076,7 +1091,7 @@
 		position: absolute;
 		top: -90px;
 		right: 10px;
-		width: 33.33%;
+		width: 200px;
 
 		@media (min-width: 768px) {
 			border-radius: 50px 0px;
@@ -1177,6 +1192,7 @@
 			.event--label {
 				padding-left: 30px;
 				padding-right: 30px;
+				padding-bottom: 8px;
 				color: #ffffff;
 				font-family: 'Proxima Nova Alt';
 				font-size: 14px;
@@ -1278,4 +1294,8 @@
 
 .row .uncont > .view-button {
 	position: absolute;
+
+	a {
+		color: #fff;
+	}
 }

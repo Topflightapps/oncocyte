@@ -156,6 +156,8 @@ require_once get_template_directory() . '/core/inc/related-posts.php';
  */
 require_once get_template_directory() . '/core/inc/deprecated-functions.php';
 
+
+
 add_shortcode('copyright-year', function($atts, $content)
 {
     extract(shortcode_atts(array(

@@ -842,7 +842,7 @@ small,
 pre,
 code {
   font-size: 15px;
-  line-height: 1.75;
+  line-height: 1.5;
   margin: 18px 0 0;
 }
 aside p,
@@ -2057,7 +2057,7 @@ body.compose-mode .main-container .row-container .with-zoomout .background-inner
   animation: backwash 1s ease alternate forwards;
 }
 .main-container .row-container .row-parent {
-  padding: 36px 36px 36px 36px;
+  padding: 15px 15px 15px 15px;
 }
 .main-container .row-container .row-parent .no-internal-gutter .uncont > * {
   margin-top: 0px;
@@ -14158,6 +14158,8 @@ footer .footer-last .icon-box.icon-inline {
   footer .footer-last {
     padding-top: 36px;
     padding-bottom: 36px;
+	width: 80%;
+	margin: 0 auto;
   }
   footer .footer-last .uncell {
     display: block;

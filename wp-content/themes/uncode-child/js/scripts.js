@@ -323,11 +323,6 @@
 				<div class="rounded-icon-2 green"></div>
 				<div class="rounded-icon-3 green"></div>
 			</div>
-			<div class="scroll-to-menu">
-				<a class="scroll-to" data-target=".determa-rx--section-3">Order Now</a>
-				<a class="scroll-to" data-target=".determa-rx--section-4">Clinical Evidence</a>
-				<a class="scroll-to" data-target=".determa-rx--section-5">Billing & Resources</a>
-			</div>
 			`);
 			setDetermaRxSection1Heights();
 		}
@@ -387,6 +382,18 @@
 				<div class="rounded-icon-3 white"></div>
 			</div>
 			`);
+
+			if ($('.homepage--section-1 .section-1--video-container video').length) {
+
+				let videoCount = $('.homepage--section-1 .section-1--video-container video').length - 1;
+				let random = Math.floor(Math.random() * (videoCount - 0 + 1)) + 0;
+				console.log(random);
+				$('.homepage--section-1 .section-1--video-container video').each(function(index,element) {
+					if (random === index) {
+						$(this).css({display: "block"});
+					}
+				})
+			}
 			setHomepageSection1Heights();
 		}
 		if ($('.homepage--section-2').length) {
@@ -991,7 +998,7 @@
 		$('.determa-rx--section-1 .grey-bg').css({height: `${greyBgHeight}px`});
 		$('.determa-rx--section-1 .green-bg').css({height: `${greenBgHeight}px`, top: `${greenBgTop}px`});
 		$('.determa-rx--section-1 .white-bg').css({height: `${whiteBgHeight}px`});
-		$('.determa-rx--section-1 .scroll-to-menu').css({top: `${greenBgTop + 45}px`});
+		$('.determa-rx--section-1 .scroll-to-menu-container').css({top: `${greenBgTop + 45}px`});
 		$('.determa-rx--section-1 .section-1-image-first img').css({'height': `${imageHeight}px`});
 		$('.determa-rx--section-1 .section-1-image-second').css({top:`${greenBgTop + greenBgHeight - 40}px`})
 		$('.determa-rx--section-1 .section-1-image-second img').css({width: `${secondImageHeight}px`, 'height': `${secondImageHeight}px`});
@@ -1138,7 +1145,13 @@
 		$('.homepage--section-1 .rounded-icons.rounded-icons-type-2').css({top: `${type2Top}px`});
 		$('.homepage--section-1 .section-1-image-first img').css({'height': `${imageFirstHeight}px`});
 		$('.homepage--section-1 .section-1-image-second').css({top:`${secondImageTop}px`});
-		$('.homepage--section-1 .section-1-image-second img').css({width: `${image2Height}px`, height: `${image2Height}px`})
+		$('.homepage--section-1 .section-1-image-second img').css({width: `${image2Height}px`, height: `${image2Height}px`});
+		if ($('.homepage--section-1 .section-1--video-container video').length) {
+			$('.homepage--section-1 .section-1--video-container').css({'height': `${imageFirstHeight}px`});
+			$('.homepage--section-1 .section-1--video-container video').each(function(index,element) {
+				$(this).css({'height': `${imageFirstHeight}px`});				
+			})
+		}
 	}
 
 	function setHomepageSection2Heights() {
